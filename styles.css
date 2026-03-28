@@ -155,7 +155,7 @@ nav.scrolled .nav-logo-icon { width: 32px; height: 32px; }
 .nav-logo-text {
   font-family: 'Cinzel Decorative', serif;
   font-size: 1.05rem;
-  color: var(--gold);
+  color: #3D2810;
   letter-spacing: 0.06em;
   line-height: 1.15;
 }
@@ -166,7 +166,7 @@ nav.scrolled .nav-logo-icon { width: 32px; height: 32px; }
   font-size: 0.48rem;
   letter-spacing: 0.35em;
   text-transform: uppercase;
-  color: var(--gold-light);
+  color: #6B5010;
   margin-top: 2px;
   opacity: 0.7;
 }
@@ -247,8 +247,21 @@ nav.scrolled .nav-logo-icon { width: 32px; height: 32px; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(10,7,5,0.4) 0%, transparent 25%, transparent 70%, rgba(254,251,243,0.9) 95%, rgba(254,251,243,1) 100%),
-    linear-gradient(0deg, transparent 80%, rgba(10,7,5,0.25) 100%);
+    radial-gradient(ellipse at center, transparent 40%, rgba(10,7,5,0.5) 100%),
+    linear-gradient(180deg, rgba(10,7,5,0.45) 0%, transparent 18%, transparent 82%, rgba(10,7,5,0.6) 100%);
+}
+/* Rajputi arch border at hero bottom */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -1px; left: 0; right: 0;
+  height: 40px;
+  z-index: 4;
+  background: var(--bg-primary);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 40V20C0 20 50 0 100 0s100 20 100 20S250 0 300 0s100 20 100 20S450 0 500 0s100 20 100 20S650 0 700 0s100 20 100 20S850 0 900 0s100 20 100 20S1050 0 1100 0s100 20 100 20V40H0z' fill='white'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 40' preserveAspectRatio='none'%3E%3Cpath d='M0 40V20C0 20 50 0 100 0s100 20 100 20S250 0 300 0s100 20 100 20S450 0 500 0s100 20 100 20S650 0 700 0s100 20 100 20S850 0 900 0s100 20 100 20S1050 0 1100 0s100 20 100 20V40H0z' fill='white'/%3E%3C/svg%3E");
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
 }
 .hero-pattern {
   position: absolute;
