@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Treasure — Jaipur's Premier Antique Emporium | Curated Heritage Since 1978</title>
+  <meta name="description" content="Royal Treasure is Jaipur's finest antique emporium, offering authenticated royal artefacts, Mughal miniatures, Rajput arms, heirloom jewellery, and heritage collectibles since 1978.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loader" id="loader">
+  <svg class="loader-crown" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M10 60L5 20L25 40L50 10L75 40L95 20L90 60Z" fill="none" stroke="#C9A84C" stroke-width="2"/>
+    <circle cx="50" cy="10" r="4" fill="#C9A84C"/>
+    <circle cx="25" cy="40" r="3" fill="#C9A84C"/>
+    <circle cx="75" cy="40" r="3" fill="#C9A84C"/>
+    <circle cx="5" cy="20" r="3" fill="#C9A84C"/>
+    <circle cx="95" cy="20" r="3" fill="#C9A84C"/>
+    <rect x="8" y="60" width="84" height="8" rx="1" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+    <line x1="50" y1="60" x2="50" y2="68" stroke="#C9A84C" stroke-width="0.5"/>
+    <line x1="30" y1="60" x2="30" y2="68" stroke="#C9A84C" stroke-width="0.5"/>
+    <line x1="70" y1="60" x2="70" y2="68" stroke="#C9A84C" stroke-width="0.5"/>
+  </svg>
+  <div class="loader-text">Unveiling Royal Heritage</div>
+</div>
+
+<!-- FLOATING PARTICLES -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">
+    <svg class="nav-logo-icon" viewBox="0 0 60 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M6 38L2 12L16 26L30 4L44 26L58 12L54 38Z" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+      <circle cx="30" cy="4" r="2.5" fill="#C9A84C"/>
+      <circle cx="16" cy="26" r="2" fill="#C9A84C"/>
+      <circle cx="44" cy="26" r="2" fill="#C9A84C"/>
+      <rect x="4" y="38" width="52" height="5" rx="1" fill="none" stroke="#C9A84C" stroke-width="1"/>
+      <path d="M22 38v5M30 38v5M38 38v5" stroke="#C9A84C" stroke-width="0.5"/>
+    </svg>
+    <div class="nav-logo-text">Royal Treasure <span>Antique Emporium · Est. 1978 · Jaipur</span></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#catalogue">Catalogue</a></li>
+    <li><a href="#story">Our Heritage</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#testimonials">Patrons</a></li>
+    <li><a href="#visit">Visit Us</a></li>
+  </ul>
+  <a href="#visit" class="nav-cta">Enquire Now</a>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ════════════ HERO ════════════ -->
+<section class="hero">
+  <div class="hero-bg" style="background-image: url('hero_light.png');"></div>
+  <div class="hero-vignette"></div>
+  <div class="hero-pattern"></div>
+
+  <div class="hero-frame">
+    <div class="hero-corner tl">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 78V2H78" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+        <path d="M2 60V10H52" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="2" cy="2" r="2" fill="#C9A84C" opacity="0.6"/>
+        <path d="M12 2L2 12" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="hero-corner tr">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 78V2H78" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+        <path d="M2 60V10H52" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="2" cy="2" r="2" fill="#C9A84C" opacity="0.6"/>
+        <path d="M12 2L2 12" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="hero-corner bl">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 78V2H78" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+        <path d="M2 60V10H52" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="2" cy="2" r="2" fill="#C9A84C" opacity="0.6"/>
+        <path d="M12 2L2 12" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="hero-corner br">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 78V2H78" stroke="#C9A84C" stroke-width="1" opacity="0.5"/>
+        <path d="M2 60V10H52" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+        <circle cx="2" cy="2" r="2" fill="#C9A84C" opacity="0.6"/>
+        <path d="M12 2L2 12" stroke="#C9A84C" stroke-width="0.5" opacity="0.4"/>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-content">
+    <svg class="hero-crown-icon" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 58L5 18L25 38L50 8L75 38L95 18L90 58Z" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+      <path d="M10 58L5 18L25 38L50 8L75 38L95 18L90 58Z" fill="#C9A84C" opacity="0.08"/>
+      <circle cx="50" cy="8" r="4" fill="#C9A84C"/>
+      <circle cx="25" cy="38" r="3" fill="#C9A84C" opacity="0.8"/>
+      <circle cx="75" cy="38" r="3" fill="#C9A84C" opacity="0.8"/>
+      <circle cx="5" cy="18" r="2.5" fill="#E8C547"/>
+      <circle cx="95" cy="18" r="2.5" fill="#E8C547"/>
+      <rect x="8" y="58" width="84" height="10" rx="1" fill="none" stroke="#C9A84C" stroke-width="1.5"/>
+      <rect x="8" y="58" width="84" height="10" rx="1" fill="#C9A84C" opacity="0.06"/>
+      <circle cx="30" cy="63" r="2" fill="#E8C547" opacity="0.5"/>
+      <circle cx="50" cy="63" r="3" fill="#E8C547" opacity="0.6"/>
+      <circle cx="70" cy="63" r="2" fill="#E8C547" opacity="0.5"/>
+      <path d="M15 63h10M45 63h10M75 63h10" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+      <rect x="6" y="70" width="88" height="4" rx="0.5" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
+    </svg>
+
+    <div class="hero-eyebrow">
+      <span class="diamond"></span>
+      Jaipur's Premier Antique Emporium
+      <span class="diamond"></span>
+    </div>
+    <h1>Royal <span class="gold">Treasure</span></h1>
+    <p class="hero-subtitle">
+      Where every artefact whispers the story of an empire long past,<br>
+      and each piece awaits its next royal keeper.
+    </p>
+    <div class="hero-buttons">
+      <a href="#catalogue" class="btn-royal primary"><span>Explore Catalogue</span></a>
+      <a href="#story" class="btn-royal secondary">Our Heritage</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="scroll-mouse"></div>
+    Discover
+  </div>
+</section>
+
+<!-- ════════════ STATS BAND ════════════ -->
+<div class="stats-band reveal">
+  <div class="stat-item">
+    <div class="stat-num" data-count="1978" data-suffix="">1978</div>
+    <div class="stat-label">Year Established</div>
+  </div>
+  <div class="stat-sep"></div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="3200" data-suffix="+">3,200+</div>
+    <div class="stat-label">Rare Artefacts</div>
+  </div>
+  <div class="stat-sep"></div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="47" data-suffix="">47</div>
+    <div class="stat-label">Countries Served</div>
+  </div>
+  <div class="stat-sep"></div>
+  <div class="stat-item">
+    <div class="stat-num" data-count="46" data-suffix=" Years">46 Years</div>
+    <div class="stat-label">Of Royal Heritage</div>
+  </div>
+</div>
+
+<!-- ════════════ MARQUEE ════════════ -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <span class="marquee-item">Mughal Miniature Paintings</span>
+    <span class="marquee-item">Royal Rajput Armour</span>
+    <span class="marquee-item">Meenakari Jewellery</span>
+    <span class="marquee-item">Jaipuri Block-Print Textiles</span>
+    <span class="marquee-item">Silver Palanquins</span>
+    <span class="marquee-item">Bidriware Metalwork</span>
+    <span class="marquee-item">Antique Jharokha Frames</span>
+    <span class="marquee-item">Heritage Sculptures</span>
+    <span class="marquee-item">Mughal Miniature Paintings</span>
+    <span class="marquee-item">Royal Rajput Armour</span>
+    <span class="marquee-item">Meenakari Jewellery</span>
+    <span class="marquee-item">Jaipuri Block-Print Textiles</span>
+    <span class="marquee-item">Silver Palanquins</span>
+    <span class="marquee-item">Bidriware Metalwork</span>
+    <span class="marquee-item">Antique Jharokha Frames</span>
+    <span class="marquee-item">Heritage Sculptures</span>
+  </div>
+</div>
+
+<!-- ════════════ CATALOGUE ════════════ -->
+<section id="catalogue">
+  <div class="catalogue-top-line"></div>
+  <div class="section-header reveal">
+    <span class="section-tag"><span class="tag-diamond"></span> Royal Catalogue <span class="tag-diamond"></span></span>
+    <h2>Curated Treasures</h2>
+    <p>Each piece authenticated, documented, and presented from the courts and havelis of Rajputana</p>
+  </div>
+
+  <div class="catalogue-filters reveal reveal-d1">
+    <button class="filter-btn active">All Pieces</button>
+    <button class="filter-btn">Arms & Armour</button>
+    <button class="filter-btn">Paintings</button>
+    <button class="filter-btn">Jewellery</button>
+    <button class="filter-btn">Furniture</button>
+    <button class="filter-btn">Textiles</button>
+    <button class="filter-btn">Metalwork</button>
+  </div>
+
+  <div class="catalogue-grid reveal reveal-d2">
+    <div class="item-card featured">
+      <div class="item-img-wrap">
+        <img src="treasure_collection.png" alt="Royal Treasure Collection" loading="lazy">
+        <div class="item-overlay"></div>
+        <div class="item-badge">Featured</div>
+      </div>
+      <div class="item-info">
+        <div class="item-era">18th Century · Jaipur</div>
+        <div class="item-name">Maharaja's Carved Throne</div>
+        <div class="item-desc">Intricately hand-carved sheesham wood with gold leaf inlay, cushioned in original brocade silk.</div>
+        <div class="item-footer">
+          <div class="item-price"><span class="cur">₹</span>48,50,000</div>
+          <button class="item-enquire">Enquire</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-img-wrap">
+        <img src="royal_sword.png" alt="Royal Sword" loading="lazy">
+        <div class="item-overlay"></div>
+        <div class="item-badge">Arms</div>
+      </div>
+      <div class="item-info">
+        <div class="item-era">17th Century · Mughal</div>
+        <div class="item-name">Jade-Hilted Khanjar</div>
+        <div class="item-desc">Wootz steel blade with jade and ruby-set hilt, once belonging to a Mughal noble.</div>
+        <div class="item-footer">
+          <div class="item-price"><span class="cur">₹</span>12,75,000</div>
+          <button class="item-enquire">Enquire</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-img-wrap">
+        <img src="mughal_painting.png" alt="Mughal Miniature" loading="lazy">
+        <div class="item-overlay"></div>
+        <div class="item-badge">Painting</div>
+      </div>
+      <div class="item-info">
+        <div class="item-era">Early 19th Century · Kishangarh</div>
+        <div class="item-name">Radha-Krishna Miniature</div>
+        <div class="item-desc">Pigment on wasli paper with ultramarine lapis and gold detailing in the Kishangarh style.</div>
+        <div class="item-footer">
+          <div class="item-price"><span class="cur">₹</span>7,20,000</div>
+          <button class="item-enquire">Enquire</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-img-wrap">
+        <img src="royal_jewelry.png" alt="Kundan Jewellery" loading="lazy">
+        <div class="item-overlay"></div>
+        <div class="item-badge">Jewellery</div>
+      </div>
+      <div class="item-info">
+        <div class="item-era">19th Century · Jaipur</div>
+        <div class="item-name">Kundan Haar Necklace</div>
+        <div class="item-desc">22-karat gold with uncut diamonds, emeralds and meenakari reverse in classic Jaipuri tradition.</div>
+        <div class="item-footer">
+          <div class="item-price"><span class="cur">₹</span>22,00,000</div>
+          <button class="item-enquire">Enquire</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-img-wrap">
+        <img src="https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=800&q=80" alt="Brass Lamp" loading="lazy">
+        <div class="item-overlay"></div>
+        <div class="item-badge">Metalwork</div>
+      </div>
+      <div class="item-info">
+        <div class="item-era">18th Century · Rajasthan</div>
+        <div class="item-name">Temple Brass Deepak</div>
+        <div class="item-desc">Multi-arm ritual lamp in dense brass with engraved deities and chain-hung oil cups.</div>
+        <div class="item-footer">
+          <div class="item-price"><span class="cur">₹</span>1,85,000</div>
+          <button class="item-enquire">Enquire</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-card">
+      <div class="item-img-wrap">
+        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80" alt="Blue Pottery" loading="lazy">
+        <div class="item-overlay"></div>
+        <div class="item-badge">Ceramics</div>
+      </div>
+      <div class="item-info">
+        <div class="item-era">16th Century · Amber Fort</div>
+        <div class="item-name">Blue Pottery Vase Pair</div>
+        <div class="item-desc">Hand-thrown quartz vessels with cobalt glaze, bearing the floral motifs of Amber court.</div>
+        <div class="item-footer">
+          <div class="item-price"><span class="cur">₹</span>3,40,000</div>
+          <button class="item-enquire">Enquire</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ OUR STORY ════════════ -->
+<section id="story">
+  <div class="story-img">
+    <img src="palace_interior.png" alt="Palace Interior, Jaipur">
+    <div class="story-img-overlay"></div>
+    <div class="story-img-label">City Palace, Jaipur · Est. 1727</div>
+  </div>
+  <div class="story-content">
+    <div class="reveal">
+      <span class="section-tag" style="justify-content:flex-start;"><span class="tag-diamond"></span> Our Heritage <span class="tag-diamond"></span></span>
+      <h2 style="font-family:'Cinzel Decorative',serif; font-size:2rem; color:var(--cream); margin:14px 0 0; line-height:1.2;">A Dynasty of<br>Curators & Collectors</h2>
+    </div>
+    <blockquote class="reveal reveal-d1">
+      "Every object that passes through our doors carries the breath of history and the touch of royalty."
+    </blockquote>
+    <p class="reveal reveal-d2">
+      Founded in 1978 by Shri Rajendra Singh Rathore, Royal Treasure was born from a lifelong devotion to preserving the material heritage of Rajputana. What began as a single shop in the walled city of Jaipur has grown into one of India's most respected antique galleries — visited by collectors, curators, and tourists from across the globe.
+    </p>
+    <p class="reveal reveal-d3">
+      Every piece is rigorously authenticated by our panel of historians and conservation experts. We source directly from ancestral estates, palace archives, and noble families who entrust us with their most prized heirlooms. Whether you are a first-time visitor to the Pink City or a seasoned connoisseur, we welcome you into a world of heritage.
+    </p>
+    <div class="ornament-divider reveal reveal-d3">
+      <span class="ornament-line"></span>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="8" y="0" width="8" height="8" transform="rotate(45 8 0)" stroke="#C9A84C" stroke-width="1"/></svg>
+      <span class="ornament-line right"></span>
+    </div>
+    <div class="story-sig reveal reveal-d4">
+      Vikram Singh Rathore
+      <span>Third Generation Proprietor</span>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ SERVICES ════════════ -->
+<section id="services">
+  <div class="section-header reveal">
+    <span class="section-tag"><span class="tag-diamond"></span> What We Offer <span class="tag-diamond"></span></span>
+    <h2>Royal Services</h2>
+    <p>From authentication to global shipping — guiding collectors and visitors at every step of their royal journey</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal reveal-d1">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="28" r="18" stroke="#C9A84C" stroke-width="1.5"/>
+          <path d="M22 28a10 10 0 0120 0" stroke="#C9A84C" stroke-width="1"/>
+          <line x1="32" y1="10" x2="32" y2="46" stroke="#C9A84C" stroke-width="0.5" opacity="0.3"/>
+          <path d="M26 52h12M28 56h8" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="32" y1="46" x2="32" y2="52" stroke="#C9A84C" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <h3>Authentication & Provenance</h3>
+      <p>Our expert historians provide rigorous documentation and certificates of provenance for every artefact.</p>
+    </div>
+    <div class="service-card reveal reveal-d2">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 54V22L32 10L52 22V54H12Z" stroke="#C9A84C" stroke-width="1.5"/>
+          <path d="M32 10V6" stroke="#C9A84C" stroke-width="1"/>
+          <circle cx="32" cy="4" r="2" fill="#C9A84C"/>
+          <path d="M24 54V38h16v16" stroke="#C9A84C" stroke-width="1"/>
+          <rect x="18" y="28" width="8" height="6" stroke="#C9A84C" stroke-width="0.8"/>
+          <rect x="38" y="28" width="8" height="6" stroke="#C9A84C" stroke-width="0.8"/>
+        </svg>
+      </div>
+      <h3>Private Estate Acquisition</h3>
+      <p>We discreetly source from Rajputana's noble families, palace estates, and royal trusts.</p>
+    </div>
+    <div class="service-card reveal reveal-d3">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="32" cy="32" r="22" stroke="#C9A84C" stroke-width="1.5"/>
+          <ellipse cx="32" cy="32" rx="10" ry="22" stroke="#C9A84C" stroke-width="0.8"/>
+          <line x1="10" y1="24" x2="54" y2="24" stroke="#C9A84C" stroke-width="0.8"/>
+          <line x1="10" y1="40" x2="54" y2="40" stroke="#C9A84C" stroke-width="0.8"/>
+          <circle cx="32" cy="32" r="2" fill="#C9A84C"/>
+        </svg>
+      </div>
+      <h3>Global Shipping & Insurance</h3>
+      <p>White-glove handling, specialist packing, and customs expertise to deliver your treasure worldwide.</p>
+    </div>
+    <div class="service-card reveal reveal-d1">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="10" width="44" height="36" stroke="#C9A84C" stroke-width="1.5"/>
+          <rect x="14" y="14" width="36" height="28" stroke="#C9A84C" stroke-width="0.8"/>
+          <path d="M20 52L10 46M44 52L54 46" stroke="#C9A84C" stroke-width="1"/>
+          <line x1="20" y1="52" x2="44" y2="52" stroke="#C9A84C" stroke-width="1.5"/>
+          <circle cx="32" cy="28" r="6" stroke="#C9A84C" stroke-width="0.8" stroke-dasharray="2 2"/>
+        </svg>
+      </div>
+      <h3>Restoration & Conservation</h3>
+      <p>Master craftsmen restore artefacts to their former glory using traditional techniques and materials.</p>
+    </div>
+    <div class="service-card reveal reveal-d2">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="10" y="8" width="20" height="28" rx="1" stroke="#C9A84C" stroke-width="1.5"/>
+          <rect x="34" y="16" width="20" height="28" rx="1" stroke="#C9A84C" stroke-width="1.5"/>
+          <path d="M14 12h12M14 16h8M14 20h10M14 24h6" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+          <path d="M38 20h12M38 24h8M38 28h10M38 32h6" stroke="#C9A84C" stroke-width="0.8" opacity="0.5"/>
+          <path d="M24 46L20 52M40 46L44 52" stroke="#C9A84C" stroke-width="1"/>
+          <circle cx="32" cy="52" r="5" stroke="#C9A84C" stroke-width="1"/>
+          <circle cx="32" cy="52" r="2" fill="#C9A84C"/>
+        </svg>
+      </div>
+      <h3>Corporate & Interior Design</h3>
+      <p>Bespoke collections for luxury hotels, palaces-turned-resorts, and residences seeking a royal aesthetic.</p>
+    </div>
+    <div class="service-card reveal reveal-d3">
+      <div class="service-icon-wrap">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 12h32v44H16z" stroke="#C9A84C" stroke-width="1.5"/>
+          <path d="M16 12C16 8 20 6 24 6h2v6H16z" stroke="#C9A84C" stroke-width="1"/>
+          <path d="M18 18h28M18 24h20M18 30h24M18 36h16M18 42h22" stroke="#C9A84C" stroke-width="0.7" opacity="0.4"/>
+          <circle cx="42" cy="46" r="8" stroke="#C9A84C" stroke-width="1.5"/>
+          <path d="M40 46l2 2 4-4" stroke="#C9A84C" stroke-width="1.2"/>
+        </svg>
+      </div>
+      <h3>Valuation & Advisory</h3>
+      <p>Independent valuations for insurance, estate planning, or understanding the worth of inherited treasures.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ GALLERY ════════════ -->
+<section id="gallery">
+  <div class="section-header reveal" style="position:relative;z-index:1;">
+    <span class="section-tag"><span class="tag-diamond"></span> The Emporium <span class="tag-diamond"></span></span>
+    <h2>A Glimpse Inside</h2>
+    <p>Step into the world of Royal Treasure — where history breathes in every corridor of the Pink City</p>
+  </div>
+  <div class="gallery-mosaic reveal">
+    <div class="gallery-tile g-lg">
+      <img src="palace_interior.png" alt="Palace corridor">
+      <div class="gallery-label"><span>The Main Gallery Hall</span></div>
+    </div>
+    <div class="gallery-tile">
+      <img src="royal_sword.png" alt="Royal sword collection">
+      <div class="gallery-label"><span>Arms Collection</span></div>
+    </div>
+    <div class="gallery-tile">
+      <img src="royal_jewelry.png" alt="Jewellery display">
+      <div class="gallery-label"><span>Jewellery Chamber</span></div>
+    </div>
+    <div class="gallery-tile">
+      <img src="mughal_painting.png" alt="Painting gallery">
+      <div class="gallery-label"><span>Painting Archive</span></div>
+    </div>
+    <div class="gallery-tile">
+      <img src="treasure_collection.png" alt="Treasure display">
+      <div class="gallery-label"><span>Private Viewing Room</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ TESTIMONIALS ════════════ -->
+<section id="testimonials">
+  <div class="section-header reveal">
+    <span class="section-tag"><span class="tag-diamond"></span> Royal Patrons <span class="tag-diamond"></span></span>
+    <h2>Words of Distinction</h2>
+    <p>The voices of collectors, curators, and travellers who have graced our threshold</p>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal reveal-d1">
+      <svg class="testimonial-quote-mark" viewBox="0 0 40 40" fill="none"><path d="M8 24c0-4.4 3.6-8 8-8V12c-6.6 0-12 5.4-12 12v8h12v-8H8zM24 24c0-4.4 3.6-8 8-8V12c-6.6 0-12 5.4-12 12v8h12v-8h-8z" fill="#C9A84C" opacity="0.3"/></svg>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">Royal Treasure is unmatched in the depth of its collection. The Mughal miniature I acquired has become the jewel of my gallery in London. Their provenance documentation is impeccable.</p>
+      <div class="testimonial-author">Sir Edward Ashworth <span>Private Collector · London, UK</span></div>
+    </div>
+    <div class="testimonial-card reveal reveal-d2">
+      <svg class="testimonial-quote-mark" viewBox="0 0 40 40" fill="none"><path d="M8 24c0-4.4 3.6-8 8-8V12c-6.6 0-12 5.4-12 12v8h12v-8H8zM24 24c0-4.4 3.6-8 8-8V12c-6.6 0-12 5.4-12 12v8h12v-8h-8z" fill="#C9A84C" opacity="0.3"/></svg>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">Vikram and his team sourced an 18th-century silver palanquin for our heritage hotel. Their knowledge, discretion, and attention to authenticity are truly extraordinary.</p>
+      <div class="testimonial-author">Priya Oberoi <span>Managing Director · Palace Hotels of India</span></div>
+    </div>
+    <div class="testimonial-card reveal reveal-d3">
+      <svg class="testimonial-quote-mark" viewBox="0 0 40 40" fill="none"><path d="M8 24c0-4.4 3.6-8 8-8V12c-6.6 0-12 5.4-12 12v8h12v-8H8zM24 24c0-4.4 3.6-8 8-8V12c-6.6 0-12 5.4-12 12v8h12v-8h-8z" fill="#C9A84C" opacity="0.3"/></svg>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-text">We stumbled upon Royal Treasure while exploring Jaipur's old city. The experience was magical — a museum-quality collection with the warmth of Rajasthani hospitality. A must-visit!</p>
+      <div class="testimonial-author">Kenji & Yui Tanaka <span>Art Enthusiasts · Tokyo, Japan</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ VISIT / CONTACT ════════════ -->
+<section id="visit">
+  <div class="visit-bg" style="background-image: url('hero_crown.png');"></div>
+  <div class="visit-overlay"></div>
+  <div class="visit-content">
+    <div class="visit-info reveal">
+      <span class="section-tag" style="justify-content:flex-start;"><span class="tag-diamond"></span> Find Us <span class="tag-diamond"></span></span>
+      <h2>Visit the Emporium</h2>
+      <div class="ornament-divider" style="justify-content:flex-start; margin:20px 0;">
+        <span class="ornament-line" style="width:60px;"></span>
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><rect x="6" y="0" width="6" height="6" transform="rotate(45 6 0)" stroke="#C9A84C" stroke-width="0.8"/></svg>
+      </div>
+      <div class="visit-detail">
+        <svg class="visit-detail-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="#C9A84C" stroke-width="1.5"/><circle cx="12" cy="9" r="2.5" stroke="#C9A84C" stroke-width="1"/></svg>
+        <div class="visit-detail-text">
+          <strong>Address</strong>
+          4, Gangauri Bazaar, Tripolia Bazar,<br>Old City, Jaipur — 302 002, Rajasthan
+        </div>
+      </div>
+      <div class="visit-detail">
+        <svg class="visit-detail-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C9A84C" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <div class="visit-detail-text">
+          <strong>Hours</strong>
+          Monday – Saturday: 10:00 AM – 7:30 PM<br>Sunday: By Private Appointment Only
+        </div>
+      </div>
+      <div class="visit-detail">
+        <svg class="visit-detail-icon" viewBox="0 0 24 24" fill="none"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="#C9A84C" stroke-width="1.5"/></svg>
+        <div class="visit-detail-text">
+          <strong>Contact</strong>
+          +91 141 256 7890<br>treasures@royaltreasure.in
+        </div>
+      </div>
+      <div class="visit-detail">
+        <svg class="visit-detail-icon" viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#C9A84C" stroke-width="1.5"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#C9A84C" stroke-width="1.5"/></svg>
+        <div class="visit-detail-text">
+          <strong>Getting Here</strong>
+          20 minutes from Jaipur International Airport.<br>Private chauffeur transfers available on request.
+        </div>
+      </div>
+    </div>
+    <div class="visit-form reveal reveal-d2">
+      <h3>Send an Enquiry</h3>
+      <div class="form-group"><input type="text" placeholder="Your Honoured Name" id="form-name"></div>
+      <div class="form-group"><input type="email" placeholder="Email Address" id="form-email"></div>
+      <div class="form-group"><input type="tel" placeholder="Phone Number" id="form-phone"></div>
+      <div class="form-group"><input type="text" placeholder="Item of Interest (if any)" id="form-item"></div>
+      <div class="form-group"><textarea placeholder="Your message to us..." id="form-msg"></textarea></div>
+      <button class="form-submit">Send Royal Enquiry</button>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer>
+  <div class="footer-brand">
+    <span class="logo">Royal Treasure</span>
+    <p>Preserving the majesty of Rajputana, one artefact at a time. Est. 1978, Old City, Jaipur — the Pink City of India.</p>
+    <div class="social-links">
+      <a href="#" class="social-link" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#C9A84C" stroke-width="1.5"/><circle cx="12" cy="12" r="5" stroke="#C9A84C" stroke-width="1.5"/><circle cx="17.5" cy="6.5" r="1.5" fill="#C9A84C"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Facebook">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="#C9A84C" stroke-width="1.5"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="WhatsApp">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="#C9A84C" stroke-width="1.5"/></svg>
+      </a>
+      <a href="#" class="social-link" aria-label="Pinterest">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#C9A84C" stroke-width="1.5"/><path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4c0 3-2 5-4 5" stroke="#C9A84C" stroke-width="1.5"/><line x1="10" y1="15" x2="8" y2="21" stroke="#C9A84C" stroke-width="1.5"/></svg>
+      </a>
+    </div>
+  </div>
+  <div class="footer-col">
+    <h4>Collection</h4>
+    <ul>
+      <li><a href="#">Arms & Armour</a></li>
+      <li><a href="#">Royal Furniture</a></li>
+      <li><a href="#">Miniature Paintings</a></li>
+      <li><a href="#">Jewellery & Gems</a></li>
+      <li><a href="#">Textiles & Carpets</a></li>
+      <li><a href="#">Metalwork</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Services</h4>
+    <ul>
+      <li><a href="#">Authentication</a></li>
+      <li><a href="#">Private Acquisition</a></li>
+      <li><a href="#">Restoration</a></li>
+      <li><a href="#">Valuation</a></li>
+      <li><a href="#">Global Shipping</a></li>
+      <li><a href="#">Interior Curation</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Visit</h4>
+    <ul>
+      <li><a href="#">Plan Your Visit</a></li>
+      <li><a href="#">Private Tours</a></li>
+      <li><a href="#">Jaipur Heritage Map</a></li>
+      <li><a href="#">Press & Media</a></li>
+      <li><a href="#">Collector's Club</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <p>© 2025 Royal Treasure Antique Emporium · All Rights Reserved · Jaipur, India</p>
+  <p>Handcrafted with devotion to heritage</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
