@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage / Main Page -->
+  <url>
+    <loc>https://royaltreasure.in/</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://royaltreasure.in/treasure_collection.png</image:loc>
+      <image:title>Royal Treasure Antique Emporium — Buy Heritage Collectibles in Jaipur, Rajasthan, India</image:title>
+      <image:caption>Curated collection of authenticated antique items and royal artefacts at Royal Treasure, Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royaltreasure.in/hero_light.png</image:loc>
+      <image:title>Royal Treasure — Jaipur's Premier Antique Emporium Since 1978</image:title>
+      <image:caption>Heritage antique emporium in the Pink City of Jaipur, Rajasthan, India</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royaltreasure.in/palace_interior.png</image:loc>
+      <image:title>Antique Store Interior — Royal Treasure Heritage Emporium, Jaipur</image:title>
+      <image:caption>Inside the main gallery hall of Royal Treasure antique store in Old City, Jaipur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Catalogue Section -->
+  <url>
+    <loc>https://royaltreasure.in/#catalogue</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://royaltreasure.in/royal_sword.png</image:loc>
+      <image:title>Buy Antique Mughal Sword — 17th Century Arms for Sale in India</image:title>
+      <image:caption>Jade-hilted Khanjar with wootz steel blade from the Mughal period, available at Royal Treasure Jaipur</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royaltreasure.in/mughal_painting.png</image:loc>
+      <image:title>Buy Radha-Krishna Miniature Painting — Kishangarh Style Heritage Art, Rajasthan</image:title>
+      <image:caption>19th Century miniature painting in Kishangarh style with lapis lazuli and gold detailing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://royaltreasure.in/royal_jewelry.png</image:loc>
+      <image:title>Buy Antique Kundan Heritage Jewellery — 19th Century Jaipur, India</image:title>
+      <image:caption>22-karat gold Kundan Haar necklace with uncut diamonds and emeralds from Jaipur</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Heritage Story Section -->
+  <url>
+    <loc>https://royaltreasure.in/#story</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Services Section -->
+  <url>
+    <loc>https://royaltreasure.in/#services</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Gallery Section -->
+  <url>
+    <loc>https://royaltreasure.in/#gallery</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://royaltreasure.in/hero_crown.png</image:loc>
+      <image:title>Royal Crown Emblem — Royal Treasure Antique Emporium, Jaipur</image:title>
+      <image:caption>Royal heritage crown emblem representing the legacy of Royal Treasure since 1978</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Testimonials Section -->
+  <url>
+    <loc>https://royaltreasure.in/#testimonials</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- FAQ Section -->
+  <url>
+    <loc>https://royaltreasure.in/#faq</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Visit / Contact Section -->
+  <url>
+    <loc>https://royaltreasure.in/#visit</loc>
+    <lastmod>2026-04-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>

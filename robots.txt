@@ -1,0 +1,49 @@
+# Royal Treasure Antique Emporium — Robots.txt
+# Website: https://royaltreasure.in
+# Last updated: 2026-04-17
+
+User-agent: *
+Allow: /
+Disallow: /bakewell-bakery/
+
+# Sitemaps
+Sitemap: https://royaltreasure.in/sitemap.xml
+
+# Crawl-delay (optional, for well-behaved bots)
+Crawl-delay: 1
+
+# Allow all major search engines full access
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+# Allow social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
+# Block AI training scrapers (protect unique content)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Allow: /
